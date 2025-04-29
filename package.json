@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CRUD API",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon server",
     "dev": "node --watch --env-file=.env server"
