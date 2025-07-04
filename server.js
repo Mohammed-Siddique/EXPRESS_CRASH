@@ -1,9 +1,13 @@
 import express from 'express';
 import path from 'path';
 import posts from './routes/posts.js';
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 
 const app = express();
+
+//Body parser
+// app.use(express.json);
+// app.use(express.urlencoded({extended: false}));
 
 //Setup static path
 // app.use(express.static(path.join(__dirname, 'public')));

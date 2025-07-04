@@ -29,7 +29,14 @@ router.get('/:id', (req, res) => {
         return res.status(404).json({msg : `A post with id of ${id} was not found`});
     }
     res.status(200).json(post);
-})
+});
+
+//Create posts
+// router.post('/', (req, res) => {
+//     console.log(req.body);
+
+//     res.status(201).json(posts);
+// });
 
 // module.exports = router;
 export default router;
