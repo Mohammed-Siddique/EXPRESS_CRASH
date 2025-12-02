@@ -2,10 +2,16 @@ import express from 'express';
 const port = process.env.PORT || 8000;
 import posts from './routes/routes.js';
 import path, { dirname } from 'path';
+import dotenv from 'dotenv';
+dotenv.config()
 import url from 'url';
 import errorHandler from './middleware/error.js';
 import notFound from './middleware/notFound.js';
 import logger from './middleware/logger.js';
+import mongoose from 'mongoose';
+import connectDB from './config/db.js';
+
+connectDB();
 
 const app = express();
 
