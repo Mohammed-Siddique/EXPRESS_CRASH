@@ -1,4 +1,5 @@
 import express from "express";
+import users from "../config/models/users.js";
 
 let posts = [
     { id : 1, title : 'Post One'},
