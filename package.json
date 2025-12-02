@@ -1,21 +1,26 @@
 {
   "name": "express_crash",
   "version": "1.0.0",
-  "description": "CRUD API",
-  "main": "index.js",
+  "description": "robust RESTful API using Express.js (v5)",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server",
-    "dev": "node --watch --env-file=.env server"
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "EXPRESS_CRASH"
+    "url": "git+https://github.com/Mohammed-Siddique/EXPRESS_CRASH.git"
   },
-  "author": "Moh@mmed $iddique",
+  "author": "Mohammed Siddique",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammed-Siddique/EXPRESS_CRASH/issues"
+  },
+  "homepage": "https://github.com/Mohammed-Siddique/EXPRESS_CRASH#readme",
   "dependencies": {
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
   }
 }
