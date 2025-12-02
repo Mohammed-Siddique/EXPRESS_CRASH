@@ -1,11 +1,19 @@
 import express from 'express';
 const port = process.env.PORT || 8000;
 import posts from './routes/routes.js';
+import path, { dirname } from 'path';
+import url from 'url';
 import errorHandler from './middleware/error.js';
 import notFound from './middleware/notFound.js';
 import logger from './middleware/logger.js';
 
 const app = express();
+
+
+//Setting up static folder
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+app.use(express.static(path.join(__dirname, 'public')));
 
 //JSON body parser
 app.use(express.json());
